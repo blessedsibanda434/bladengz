@@ -1,1 +1,1 @@
-web: gunicorn bladengz.wsgi 
+web: gunicorn bladengz.wsgi --log-file -

@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.comments-icon {
+    color: #17a2b8;
+    position: fixed;
+}
+.share-facebook {
+    color: #17a2b8;
+    margin-top: 50px;
+    position: fixed;
+}
+.share-twitter {
+    color: #17a2b8;
+    position: fixed;
+    margin-top: 100px;
+}
+.see-github {
+    color: #17a2b8;
+    margin-top: 150px;
+    position: fixed;
+}

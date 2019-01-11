@@ -25,7 +25,7 @@ SECRET_KEY = 'jk_asabew-#5*b7_*qxb1z!l&=_5a@vajtm**z2a4z8r!j%^n_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bladengz.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['bladengz.herokuapp.com','localhost', '0.0.0.0:5000']
 
 
 # Application definition
