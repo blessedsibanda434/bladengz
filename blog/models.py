@@ -1,5 +1,6 @@
 from django.db import models
 from django.shortcuts import reverse
+from tinymce.models import HTMLField
 
 class Post(models.Model):
     STATUS = (
@@ -7,7 +8,7 @@ class Post(models.Model):
         ('Published', 'P')
     )
     title = models.CharField(max_length=150)
-    body = models.TextField()
+    body = HTMLField()
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     image_header = models.ImageField(upload_to='images/image_headers', null=True, blank=True)
