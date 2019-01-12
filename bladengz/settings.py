@@ -25,7 +25,10 @@ SECRET_KEY = 'jk_asabew-#5*b7_*qxb1z!l&=_5a@vajtm**z2a4z8r!j%^n_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost', 'mysite.com']
+<<<<<<< HEAD
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost', 'mysite.com', 'bladengz.herokuapp.com']
+=======
+>>>>>>> f2f99807ee9020e3ce935819b944636493b71efd
 
 
 # Application definition
@@ -51,6 +54,7 @@ DISQUS_WEBSITE_SHORTNAME = 'bladengz'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', # whitenoise config
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
