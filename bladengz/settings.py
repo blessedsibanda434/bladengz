@@ -40,9 +40,12 @@ INSTALLED_APPS = [
 
     'django.contrib.sites',
 
+    #third party apps
     'disqus',
 
+    #custom apps
     'blog',
+    'videos'
 ]
 
 

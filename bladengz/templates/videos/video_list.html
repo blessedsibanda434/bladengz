@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul class="mt-3">
+        {% for video in videos %}
+            <div class="row">
+                <a href="{{video.get_absolute_url}}">
+                    <h3>{{video.title}}</h3>
+                </a>
+            </div>
+        {% empty %}
+            <h3>No videos avaliable yet.</h3>
+        {% endfor %}
+    </ul>
+{% endblock content %}

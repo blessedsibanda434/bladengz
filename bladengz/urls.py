@@ -23,6 +23,7 @@ from .views import HomeView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
+    path('videos/', include('videos.urls')),
     path('', HomeView.as_view(), name='home'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
