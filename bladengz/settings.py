@@ -25,7 +25,7 @@ SECRET_KEY = 'jk_asabew-#5*b7_*qxb1z!l&=_5a@vajtm**z2a4z8r!j%^n_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost', 'mysite.com']
 
 
 # Application definition
@@ -38,8 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django.contrib.sites',
+
+    'disqus',
+
     'blog',
 ]
+
+
+DISQUS_API_KEY = 'zAgLn1ZeqDySsYXPZX3Gg0tQIpdY8Qf78IYmCFU8SA6YCRerwbHTyPLLQguT6hxw'
+DISQUS_WEBSITE_SHORTNAME = 'bladengz'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
