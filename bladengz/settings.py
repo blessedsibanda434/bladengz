@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     #third party apps
     'disqus',
+    'markdownx',
 
     #custom apps
     'blog',
