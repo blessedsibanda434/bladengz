@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load disqus_tags %}
+{% load markdownify %}
 
 
 {% block content %}
@@ -7,17 +8,12 @@
         <div class="col-md-1">
         </div>
         <div class="col-md-8">
-            <div class="card mb-3">
-          <img src="{{post.image_header.url}}" class="card-img-top" alt="...">
-                <div class="card-img-overlay">
-                    <h1 class="card-title mr-auto text-dark">{{post.title}}</h1>
-
+            <h1>{{post.title}}</h1>
+            <img src="{{post.image_header.url}}" class="img-fluid">
+            <div>
+                {{ post.body|safe }}
             </div>
-          <div class="card-body">
-            <p class="card-text">{{post.body|linebreaks}}</p>
-            <p class="card-text"><small class="text-muted">Posted on {{post.created}}</small></p>
-          </div>
-        </div>
+            <small class="text-muted">Posted on {{post.created}}</small>
         {% disqus_show_comments %}
         </div>
         <div class="col-md-2"></div>
@@ -25,3 +21,4 @@
     </div>
     
 {% endblock content %}
+
