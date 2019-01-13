@@ -15,11 +15,24 @@
 
     <title>BladengZ</title>
   </head>
+  <style>
+
+  </style>
   <body>
-    {% include 'header.html' %}
+    
     <div class="container">
+       {% include '_header.html' %}
        {% block content %}{% endblock content %}
     </div>
+
+    <footer class="text-muted border-top border-secondary py-2 align-items-center">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="text-center">Bladengz &copy; 2018</p>
+        </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script>
